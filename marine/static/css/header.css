@@ -1,0 +1,15 @@
+.Header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    font-size: 15px;
+    background-color: black;
+    padding: 0 30px;
+}
+
+nav a {
+    font-size: 15px;
+    margin-right: 15px;
+    color: white;
+}

@@ -1,0 +1,53 @@
+.ContentFrame {
+    display: flex;
+    flex-direction: column;
+}
+.MainSection {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    min-height: 500px;
+}
+.MainSection:nth-child(2){
+    border-bottom: 1px solid black;
+}
+.ImageSection {
+    width: 100%;
+    min-height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ImageSection:first-child {
+    background-color: red;
+}
+.ImageSection:nth-child(2) {
+    background-color: blue;
+}
+.ImageSection:nth-child(3) {
+    background-color: yellow;
+}
+.GridWrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: minmax(300px, auto);
+}
+.GridWrapper div:first-child {
+    background-color: blue;
+}
+.GridWrapper div:nth-child(2) {
+    background-color: red;
+}
+.GridWrapper div:nth-child(3) {
+    background-color: yellow;
+}
+.GridWrapper div:nth-child(4) {
+    background-color: green;
+}
+.GridWrapper div:nth-child(5) {
+    background-color: violet;
+}
+.GridWrapper div:nth-child(6) {
+    background-color: brown;
+}
