@@ -1,15 +1,32 @@
 .Header {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    height: 50px;
+    height: 200px;
     font-size: 15px;
-    background-color: black;
+    background-color: darkblue;
     padding: 0 30px;
+    width: 100%;
 }
-
+.Header .Logo {
+    margin-bottom: 10px;
+}
+.Header .Line {
+    margin-bottom: 10px;
+}
+.Header nav {
+    margin-bottom: 10px;
+}
+.Header .Logo h1 {
+    font-size: 30px;
+    color: white;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
 nav a {
     font-size: 15px;
     margin-right: 15px;
     color: white;
+    font-weight: 600;
 }

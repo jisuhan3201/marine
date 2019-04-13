@@ -2,32 +2,105 @@
 {% load static %}
 {% block content %}
 <div class="ContentFrame">
-    <div class="MainSection">
-        <div class="ImageSection">
-            <h1>image sec</h1>
+    <!-- <div class="MainFull">
+        <div class="MainTitle">
+            <h1>LOREM, IPSUM DOLOR adipisicing </h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore praesentium illum debitis dolores eum, ullam perferendis et amet optio accusamus labore soluta deleniti saepe quaerat quis dignissimos sapiente dolor aliquid?</p>
         </div>
-        <div class="ImageSection">
-            <h1>image sec</h1>
+        <div class="SVGWrapper">
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" viewBox="0 0 16 16">
+                <path fill="#fff" d="M16 5.5l-1-1-7 7-7-7-1 1 8 8 8-8z"></path>
+            </svg>                        
         </div>
-        <div class="ImageSection">
-            <h1>image sec</h1>
-        </div>  
+    </div> -->
+    <div class="MainIntro">
+        <div class="IntroText">
+            <h2>We Could Be Marine</h2>
+            <p>우리 모두가 물에서 자유로이 헤엄치는 수영선수가 될 수 있습니다!!</p>
+        </div>
+        <div class="IntroImage">
+            <img src="{% static 'images/m_logo.png' %}"/>
+        </div>
     </div>
-    <div class="MainSection">
-        <h1>Our Goal</h1>
+    <div id="main-about" class="MainAbout">
+        <div class="AboutSection">
+            <div class="AboutTitle">
+                <h2>Q. 위쿳비마린은?</h2>
+            </div>
+            <div class="AboutContent">
+                <p>A. 해양에서 사고가 발생했을 때 사람을 살리기 위한 제품을 연구하는 회사입니다.</p>
+                <p>A. 위급상황 발생시 즉각 대처하기 용이한 제품으르 만드는 회사이기도 합니다.</p>
+            </div>
+        </div>
+        <div class="AboutSection"> 
+            <a href="/about">자세히 보기</a>
+        </div>
+    </div>
+    <div class="SubAbout">
+        <div class="SubAboutSection">
+            <hr class="blue-hr">
+            <h3>해양구조</h3>
+            <img src="{% static 'images/m_logo.png' %}"/>
+            <p>해양 구조를 하기 위해 해수욕장, 항구, 선박 등에 배치할 구조 제품을 연구합니다.</p>
+        </div>
+        <div class="SubAboutSection">
+            <hr class="blue-hr">
+            <h3>해양레저</h3>
+            <img src="{% static 'images/m_logo.png' %}"/>
+            <p>빠지, 해수욕장에서 즐기기 위한 해양 레저용 장비를 판매합니다.</p>    
+        </div>
+        <div class="SubAboutSection">
+            <hr class="blue-hr">
+            <h3>방위산업</h3>
+            <img src="{% static 'images/m_logo.png' %}"/>
+            <p>해양에서도 효과적인 국가수호 및 방위를 하기 위한 방산제품을 연구합니다.</p> 
+        </div>
+    </div>
+    <div id="main-prod" class="MainProd">
+        <div class="ProdSection">
+            <div class="ProdTitle">
+                <h2>Q. 제트수트란?</h2>
+            </div>
+            <div class="ProdContent">
+                <p>A. 수트에 제트팩 엔진을 달아 물속에서 자유로이 움직일 수 있도록 만든 제품의 이름입니다.</p>
+                <p>A. 현존하는 해양 아이언맨 수트!</p>
+            </div>
+        </div>
+        <div class="ProdSection"> 
+            <a href="/prod">제품 살펴보기</a>
+        </div>
+    </div>
+    <div id="main-buy" class="MainBuy">
+        <h3>제품구매</h3>
+        <div class="BuyText">
+            <p>현장판매만 가능하며,</p>
+            <p>구입 후 업체에서 제공하는 <span>교육을 이수</span>하고, 정부에서 제공하는 <span>라이센스</span>를 취득하셔야 가능합니다.</p>
+            <p>계속해서 업그레이드 되는 제품을 보실 수 있습니다.</p>        
+        </div>
+        <div class="BuySection"> 
+                <a href="/prod">구매 문의</a>
+        </div>
+    </div>
+    <div id="main-cooperation" class="MainSection">
+        <h1>고객 지원</h1>
+        <hr class=short-hr>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate officiis ducimus</p>
-    </div>
-    <div class="MainSection">
-        <h1>Our Goal</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate officiis ducimus</p>
-    </div>
-    <div class="GridWrapper">
-        <div>1</div>
-        <div>2</div>
-        <div>3</div>
-        <div>4</div>
-        <div>5</div>
-        <div>6</div>
+        <form method="POST">
+            {% csrf_token %}
+            <div class="FormRow">
+                <label>Name</label>
+                <input name="name" type="text">
+            </div>
+            <div class="FormRow">
+                <label>Email Address</label>
+                <input name="address" type="text">
+            </div>
+            <div class="FormRow">
+                <label>Content</label>
+                <textarea name="content" id="" cols="30" rows="10"></textarea>
+            </div>
+            <input type="submit" value="Submit">
+        </form>
     </div>
 </div>
 {% endblock %}

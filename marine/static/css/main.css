@@ -2,52 +2,222 @@
     display: flex;
     flex-direction: column;
 }
-.MainSection {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    min-height: 500px;
-}
-.MainSection:nth-child(2){
-    border-bottom: 1px solid black;
-}
-.ImageSection {
+/* .MainFull {
+    height: 100vh;
     width: 100%;
-    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url("/static/images/main_ocean2.jpg") no-repeat center;
+} */
+/* .MainFull .MainTitle {
+    width: 500px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-transform: uppercase;
+}
+.MainFull .MainTitle h1 {
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+.MainFull .MainTitle p {
+    font-size: 20px;
+}
+.SVGWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    margin-bottom: 30px;
+}
+.SVGWrapper svg {
+    animation: blinker 1s linear infinite;
+}
+@keyframes blinker {
+    50% {
+      opacity: 0;
+    }
+} */
+.MainIntro {
+    display: flex;
+    align-items: center;
+    padding: 30px 10%;
+    background-image: linear-gradient(to right, darkblue, #24BFFF);
+}
+.MainIntro .IntroText {
+    width: 70%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.MainIntro .IntroText h2 {
+    font-size: 60px;
+    color: white;
+    font-weight: 900;
+    margin-bottom: 100px;
+}
+.MainIntro .IntroText p {
+    color: white;
+    font-weight: 700;
+}
+.MainIntro .IntroImage {
+    width: 30%;
+    height: 300px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.ImageSection:first-child {
-    background-color: red;
+.MainAbout {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-image: linear-gradient(to right, rgb(3, 90, 251, 0.7), rgb(1, 184, 251, 0.7)), url("/static/images/marine-img3.jpeg");
+    background-size: cover;
+    height: 500px;
+    padding: 30px 10%;
+    width: 100%;
 }
-.ImageSection:nth-child(2) {
-    background-color: blue;
+.MainAbout .AboutSection:first-child {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    font-size: 20px;
+    margin-bottom: 30px;
+    width: 100%;
 }
-.ImageSection:nth-child(3) {
-    background-color: yellow;
+.MainAbout .AboutSection:nth-child(2) {
+    display: flex;
+    font-size: 16px;
+    border: 1.5px solid white;
+    padding: 15px 30px;
 }
-.GridWrapper {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-auto-rows: minmax(300px, auto);
+.MainAbout .AboutSection .AboutTitle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1.5px solid white;
+    height: 150px;
+    width: 30%;
+    margin-right: 15px;
 }
-.GridWrapper div:first-child {
-    background-color: blue;
+.MainAbout .AboutSection .AboutContent {
+    width: 70%;
 }
-.GridWrapper div:nth-child(2) {
-    background-color: red;
+.MainAbout .AboutSection .AboutContent p {
+    margin-bottom: 30px;
 }
-.GridWrapper div:nth-child(3) {
-    background-color: yellow;
+.SubAbout {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 10%;
 }
-.GridWrapper div:nth-child(4) {
-    background-color: green;
+.SubAbout .SubAboutSection {
+    width: 30%;
+    padding: 0 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
-.GridWrapper div:nth-child(5) {
-    background-color: violet;
+.SubAbout .SubAboutSection .blue-hr {
+    width: 100%;
+    border: 0;
+    height: 0;
+    border-bottom: 3px solid #24BFFF;
+    margin-bottom: 15px;  
 }
-.GridWrapper div:nth-child(6) {
-    background-color: brown;
+.SubAbout .SubAboutSection h3 {
+    margin-bottom: 15px;
+    font-size: 20px;
+    font-weight: 700;
 }
+.SubAbout .SubAboutSection p {
+    margin-bottom: 15px;
+    font-size: 12px;
+    font-weight: 500;
+}
+.MainProd {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: darkblue;
+    background-image: linear-gradient(to right, rgb(255, 255, 255, 0.3), rgb(255, 255, 255, 0.6)), url("/static/images/marine-img2.jpeg");
+    background-size: cover;
+    height: 500px;
+    padding: 30px 10%;
+    width: 100%;
+}
+.MainProd .ProdSection:first-child {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    font-size: 20px;
+    margin-bottom: 30px;
+    width: 100%;
+}
+.MainProd .ProdSection:nth-child(2) {
+    display: flex;
+    font-size: 16px;
+    border: 1.5px solid darkblue;
+    padding: 15px 30px;
+}
+.MainProd .ProdSection .ProdTitle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1.5px solid darkblue;
+    height: 150px;
+    width: 30%;
+    margin-right: 15px;
+}
+.MainProd .ProdSection .ProdContent {
+    width: 70%;
+}
+.MainProd .ProdSection .ProdContent p {
+    margin-bottom: 30px;
+}
+.MainBuy {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: linear-gradient(to right, rgb(255, 255, 255, 0.3), rgb(255, 255, 255, 0.6)), url("/static/images/marine-img1.jpeg");
+    background-size: cover;
+    background-position: bottom;
+    color: black;
+    padding: 30px 10%;
+}
+.MainBuy h3 {
+    margin-bottom: 30px;
+    font-size: 20px;
+    font-weight: 700;
+}
+.MainBuy .BuyText {
+    line-height: 50px;
+    margin-bottom: 30px;
+}
+.MainBuy .BuyText p span {
+    font-size: 30px;
+    text-decoration: underline;
+}
+.MainBuy .BuySection {
+    display: flex;
+    font-size: 16px;
+    border: 1.5px solid black;
+    padding: 15px 30px;
+}
+
+

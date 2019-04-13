@@ -1,5 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto|Titillium+Web|Work+Sans:300');
+
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  font-family: 'Titillium Web', sans-serif;
+  font-family: 'Work Sans', sans-serif;
   /* padding-top: 60px; */
   /* padding-bottom: 60px; */
   animation: 1s bodyPopIn ease-in-out;
@@ -35,20 +39,21 @@ ul {
   height: 0;
   border-top: 1px solid rgba(0, 0, 0, 0.1);
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-}
+} */
 hr.short-hr {
   width: 30px;
   border: 0;
   height: 0;
-  border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+  border-bottom: 2px solid #303030;
+  margin-bottom: 30px;
 }
-hr.short-hr2 {
+/* hr.short-hr2 {
   width: 30px;
   border: 0;
   height: 0;
   border-bottom: 2px solid #999;
-}
-hr.black-hr {
+} */
+/* hr.black-hr {
   width: 100%;
   border: 0;
   height: 0;

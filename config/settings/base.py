@@ -211,6 +211,11 @@ FIXTURE_DIRS = (str(APPS_DIR.path("fixtures")),)
 EMAIL_BACKEND = env(
     "DJANGO_EMAIL_BACKEND", default="django.core.mail.backends.smtp.EmailBackend"
 )
+EMAIL_HOST = '127.0.0.1'
+EMAIL_USE_TLS = False
+EMAIL_PORT = 587
+EMAIL_HOST_USER = ''
+EMAIL_HOST_PASSWORD = ''
 
 # ADMIN
 # ------------------------------------------------------------------------------

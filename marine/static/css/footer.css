@@ -1,44 +1,30 @@
-.bottom-footer {
-    padding: 30px;
-    background-color: #000;
-    font-size: 13px;
-  }
-  .bottom-footer .footer__bottom {
-    margin: auto;
-    color: #999;
-    max-width: 1080px;
-  }
-  .footer__bottom .row {
-    display: flex;
-    padding-bottom: 30px;
-  }
-  .footer__bottom .row:last-child {
-    padding-top: 10px;
-    padding-bottom: 0;
-  }
-  .footer__bottom .row .column {
-    display: flex;
-    width: 33%;
-    flex-direction: column;
-  }
-  .footer__bottom .row .column:first-child {
-    justify-content: center;
-  }
-  .footer__bottom .row .column .bottom-title {
-    color: #ccc;
-    font-size: 14px;
-    margin-bottom: 15px;
-  }
-  .footer__bottom .row .column .areha-logo {
-    width: 130px;
-  }
-  .footer__bottom .row .column span {
-    margin-bottom: 8px;
-  }
-  .footer__bottom .row .column span:last-child {
-    margin-bottom: 0;
-  }
-  .footer__bottom .row .copyright {
-    margin-right: auto;
-  }
-  
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 10%;
+  background-color: black;
+  color: white;
+}
+.FooterTitle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.FooterTitle h3 {
+  font-size: 25px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+.FooterTitle h2 {
+  font-size: 40px;
+  font-weight: 800;
+}
+.FooterContent {
+  font-size: 12px;
+  line-height: 20px;
+}
