@@ -10,18 +10,6 @@ class GetMain(View):
 
         return render(request, 'home.html', {})
 
-    def post(self, request):
-
-        email = request.POST
-
-        subject = 'Contact form'
-        message = "Sender : " + email.get('name') + "\n" + "Email : " + email.get('address') + "\n" + email.get('content')
-        email_from = settings.EMAIL_HOST_USER
-        recipient_list = ['jisu@areha.io',]
-        send_mail( subject, message, email_from, recipient_list, fail_silently=False )
-
-        return render(request, 'home.html', {})
-
 
 class GetAbout(View):
 
@@ -56,3 +44,15 @@ class GetContact(View):
     def get(self, request):
 
         return render(request, 'contact.html', {})
+
+    def post(self, request):
+
+        email = request.POST
+
+        subject = 'Contact form'
+        message = email.get('content')
+        email_from = settings.EMAIL_HOST_USER
+        recipient_list = ['jisu@areha.io',]
+        send_mail( subject, message, email_from, recipient_list, fail_silently=False )
+
+        return render(request, 'message.html', {})

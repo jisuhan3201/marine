@@ -1,0 +1,33 @@
+.MessageSent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.MessageSent .MessageHeader {
+    width: 100%;
+    height: 200px;
+    background-image: linear-gradient(to right, rgb(33, 69, 157, .8), rgb(117, 195, 207, .8));
+    padding: 30px 10%;
+}
+.MessageSent .MessageHeader img {
+    float: right;
+    width: 200px;
+}
+.MessageContent {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to right, rgb(33, 69, 157, .9), rgb(117, 195, 207, .9)), url("/static/images/marine-img3.jpeg");
+    background-size: cover;
+    background-position: bottom;
+    color: darkblue;
+    padding: 150px 10%;
+}
+.MessageContent p {
+    line-height: 70px;
+    font-size: 30px;
+    font-weight: 700;
+}
