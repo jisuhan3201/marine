@@ -1,12 +1,16 @@
 {% load static %}
 <div class="Header">
-    <div class="Logo"><img src="{% static 'images/logo.jpg' %}"/></div>
-    <hr class="white-hr">
+    <img src="{% static 'images/logo.jpg' %}"/>
+    <img src="{% static 'images/tube.png' %}"/>
+    <div class="Line">
+        <hr class="half-hr">
+        <hr class="half-hr">
+    </div>
     <nav>
         <a id="nav-about" href="#">About Us</a>
         <a id="nav-prod" href="#">Product</a>
         <a id="nav-buy" href="#">Buy</a>
-        <!-- <a id="nav-cooperation" href="#">Cooperation</a> -->
+        <a id="nav-cooperation" href="/cooperation">Cooperation</a>
         <a id="nav-contact" href="/contact">Contact Us</a>
     </nav>
 </div>

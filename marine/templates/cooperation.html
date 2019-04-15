@@ -1,23 +1,6 @@
 {% extends "base.html" %}
 {% load static %}
 {% block content %}
-<div id="main-cooperation" class="MainContact">
-    <h3>고객 지원</h3>
-    <form method="POST">
-        {% csrf_token %}
-        <div class="FormRow">
-            <div class="FormColumn">
-                <input name="name" type="text" placeholder="NAME">
-                <input name="email" type="text" placeholder="Email">
-                <input name="subject" type="text" placeholder="Subject">
-            </div>
-            <div class="FormColumn">
-                <textarea name="content" id="">Message Text..</textarea>
-            </div>            
-        </div>
-        <div class="FormRow">
-            <input type="submit" value="Send to WCBM">
-        </div>
-    </form>
+<div class="MainCooperation">
 </div>
 {% endblock %}

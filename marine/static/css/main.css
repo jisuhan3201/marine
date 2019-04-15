@@ -153,6 +153,10 @@
     height:150px;
     margin-bottom: 15px;
 }
+.SubAbout .SubAboutSection:nth-child(3) img {
+    width: 230px;
+    margin-bottom: 15px;
+}
 .MainProd {
     display: flex;
     flex-direction: column;

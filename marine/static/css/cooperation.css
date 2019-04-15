@@ -1,0 +1,5 @@
+.MainCooperation {
+    min-height: 600px;
+    background-image: linear-gradient(to right, rgb(33, 69, 157, .3), rgb(117, 195, 207, .3)), url("/static/images/marine-img4.jpg");
+    background-size: cover;
+}
