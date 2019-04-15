@@ -5,7 +5,7 @@
     align-items: center;
     height: 200px;
     font-size: 15px;
-    background-color: darkblue;
+    background-color: #21459D;
     padding: 0 30px;
     width: 100%;
 }
@@ -14,6 +14,10 @@
 }
 .Header .Line {
     margin-bottom: 10px;
+}
+.Header .Line img {
+    width: 70px;
+    height: 70px;
 }
 .Header nav {
     margin-bottom: 10px;

@@ -1,0 +1,11 @@
+{% load static %}
+<div class="Header2">
+    <div class="Logo"><a href="/"><img src="{% static 'images/logo.jpg' %}"/></a></div>
+    <nav>
+        <a id="nav-about" class="{% ifequal request.path '/about'%} active {% endifequal%}" href="/about">About Us</a>
+        <a id="nav-prod" class="{% ifequal request.path '/product'%} active {% endifequal%}" href="/product">Product</a>
+        <a id="nav-buy" class="{% ifequal request.path '/buy'%} active {% endifequal%}" href="/buy">Buy</a>
+        <!-- <a id="nav-cooperation" class="{% ifequal request.path '/cooperation'%} active {% endifequal%}" href="/cooperation">Cooperation</a> -->
+        <a id="nav-contact" class="{% ifequal request.path '/contact'%} active {% endifequal%}" href="/contact">Contact Us</a>
+    </nav>
+</div>

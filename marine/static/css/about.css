@@ -1,0 +1,43 @@
+.MainAbout {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-image: linear-gradient(to right, rgb(33, 69, 157, .8), rgb(117, 195, 207, .8)), url("/static/images/marine-img3.jpeg");
+    background-size: cover;
+    background-position: bottom;
+    height: 500px;
+    padding: 30px 10%;
+    width: 100%;
+}
+.MainAbout .AboutSection:first-child {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    font-size: 20px;
+    margin-bottom: 30px;
+    width: 100%;
+}
+.MainAbout .AboutSection:nth-child(2) {
+    display: flex;
+    font-size: 16px;
+    border: 1.5px solid white;
+    padding: 15px 30px;
+}
+.MainAbout .AboutSection .AboutTitle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1.5px solid white;
+    height: 150px;
+    width: 30%;
+    margin-right: 15px;
+}
+.MainAbout .AboutSection .AboutContent {
+    width: 70%;
+}
+.MainAbout .AboutSection .AboutContent p {
+    margin-bottom: 30px;
+}

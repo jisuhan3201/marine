@@ -19,7 +19,7 @@
             <p>우리 모두가 물에서 자유로이 헤엄치는 수영선수가 될 수 있습니다!!</p>
         </div>
         <div class="IntroImage">
-            <img src="{% static 'images/m_logo.png' %}"/>
+            <img src="{% static 'images/swim2.jpeg' %}"/>
         </div>
     </div>
     <div id="main-about" class="MainAbout">
@@ -40,19 +40,19 @@
         <div class="SubAboutSection">
             <hr class="blue-hr">
             <h3>해양구조</h3>
-            <img src="{% static 'images/m_logo.png' %}"/>
+            <img src="{% static 'images/tube.jpeg' %}"/>
             <p>해양 구조를 하기 위해 해수욕장, 항구, 선박 등에 배치할 구조 제품을 연구합니다.</p>
         </div>
         <div class="SubAboutSection">
             <hr class="blue-hr">
             <h3>해양레저</h3>
-            <img src="{% static 'images/m_logo.png' %}"/>
+            <img src="{% static 'images/swim_glass.png' %}"/>
             <p>빠지, 해수욕장에서 즐기기 위한 해양 레저용 장비를 판매합니다.</p>    
         </div>
         <div class="SubAboutSection">
             <hr class="blue-hr">
             <h3>방위산업</h3>
-            <img src="{% static 'images/m_logo.png' %}"/>
+            <img src="{% static 'images/shield.png' %}"/>
             <p>해양에서도 효과적인 국가수호 및 방위를 하기 위한 방산제품을 연구합니다.</p> 
         </div>
     </div>
@@ -67,7 +67,7 @@
             </div>
         </div>
         <div class="ProdSection"> 
-            <a href="/prod">제품 살펴보기</a>
+            <a href="/product">제품 살펴보기</a>
         </div>
     </div>
     <div id="main-buy" class="MainBuy">
@@ -78,29 +78,8 @@
             <p>계속해서 업그레이드 되는 제품을 보실 수 있습니다.</p>        
         </div>
         <div class="BuySection"> 
-                <a href="/prod">구매 문의</a>
+            <a href="/buy">구매 문의</a>
         </div>
-    </div>
-    <div id="main-cooperation" class="MainSection">
-        <h1>고객 지원</h1>
-        <hr class=short-hr>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate officiis ducimus</p>
-        <form method="POST">
-            {% csrf_token %}
-            <div class="FormRow">
-                <label>Name</label>
-                <input name="name" type="text">
-            </div>
-            <div class="FormRow">
-                <label>Email Address</label>
-                <input name="address" type="text">
-            </div>
-            <div class="FormRow">
-                <label>Content</label>
-                <textarea name="content" id="" cols="30" rows="10"></textarea>
-            </div>
-            <input type="submit" value="Submit">
-        </form>
     </div>
 </div>
 {% endblock %}

@@ -7,7 +7,7 @@ body {
   /* padding-top: 60px; */
   /* padding-bottom: 60px; */
   animation: 1s bodyPopIn ease-in-out;
-  background-color: #fafafa;
+  background-color: white;
 }
 
 @keyframes bodyPopIn {
@@ -53,10 +53,10 @@ hr.short-hr {
   height: 0;
   border-bottom: 2px solid #999;
 } */
-/* hr.black-hr {
-  width: 100%;
+hr.white-hr {
+  width: 80%;
   border: 0;
   height: 0;
-  border-bottom: 1px solid #999;
+  border-bottom: 1px solid white;
   margin: 30px 0 30px 0;
-} */
+}

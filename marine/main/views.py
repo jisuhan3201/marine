@@ -21,3 +21,38 @@ class GetMain(View):
         send_mail( subject, message, email_from, recipient_list, fail_silently=False )
 
         return render(request, 'home.html', {})
+
+
+class GetAbout(View):
+
+    def get(self, request):
+
+        return render(request, 'about.html', {})
+
+
+class GetProd(View):
+
+    def get(self, request):
+
+        return render(request, 'prod.html', {})
+
+
+class GetBuy(View):
+
+    def get(self, request):
+
+        return render(request, 'buy.html', {})
+
+
+class GetCooperation(View):
+
+    def get(self, request):
+
+        return render(request, 'cooperation.html', {})
+
+
+class GetContact(View):
+
+    def get(self, request):
+
+        return render(request, 'contact.html', {})
