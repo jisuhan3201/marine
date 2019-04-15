@@ -68,11 +68,12 @@
     font-weight: 700;
 }
 .MainIntro .IntroImage {
-    width: 30%;
-    height: 300px;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.MainIntro .IntroImage img {
+    width: 300px;
 }
 .MainAbout {
     display: flex;
