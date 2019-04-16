@@ -111,9 +111,6 @@
     width: 30%;
     margin-right: 15px;
 }
-.MainAbout .AboutSection .AboutContent {
-    width: 70%;
-}
 .MainAbout .AboutSection .AboutContent p {
     margin-bottom: 30px;
 }
@@ -192,9 +189,6 @@
     height: 150px;
     width: 30%;
     margin-right: 15px;
-}
-.MainProd .ProdSection .ProdContent {
-    width: 70%;
 }
 .MainProd .ProdSection .ProdContent p {
     margin-bottom: 30px;
